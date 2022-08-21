@@ -1,82 +1,90 @@
 .masters {
-    background-color: var(--secondary-bgc)
+  background-color: var(--secondary-bgc);
 }
 .masters-list {
-    display: flex;
-    margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-
 .masters-item {
-    width: 270px;
-    background-color: var(--second-title-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
-    }
+  width: 100%;
+  background-color: var(--second-title-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+}
 
 .masters-title {
-    text-align: center;
-color: var(--title-color);
-margin-bottom: 50px;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 50px;
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 
 .card-content {
-    padding: 30px 0;
-    text-align: center;
+  padding: 30px 0;
+  text-align: center;
 }
 
 .masters-item-title {
-    font-weight: 500;
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
-color: var(--title-color);
-margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 10px;
 }
 
 .masters-item-text {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
-color: var(--main-color);
-margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 16px;
 }
 
 .masters-soc-list {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .masters-soc-item {
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-    &:last-child {
-        margin-right: 0;
-        }
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
-
 
 .masters-soc-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: var(--icon-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
     background-color: var(--accent-color);
     color: var(--second-title-color);
-}
+  }
 }
 
 .masters-soc-icon {
-    fill: currentColor;
+  fill: currentColor;
 }
