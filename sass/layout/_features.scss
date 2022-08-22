@@ -55,7 +55,6 @@
 
   padding: 63px 24px;
   height: 100%;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
 
@@ -68,6 +67,11 @@
   }
   .features-wrap:focus & {
     transform: translateY(0);
+  }
+
+  @media screen and (max-width: 320px) {
+    font-size: 14px;
+    padding: 24px;
   }
 }
 

@@ -18,8 +18,14 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
     text-align: left;
+  }
+
+  @media  screen and (min-width: 768px) {
+    h3.pic-list__pre-title {
+      text-align: left;
+  }
   }
 }
 .pic-list__text {
